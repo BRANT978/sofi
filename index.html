@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111112">
+  <title>Sofi.</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="opening-shade" aria-hidden="true"></div>
+  <div class="ambient" id="ambient" aria-hidden="true"></div>
+  <main class="page-shell">
+    <header class="masthead">
+      <span class="masthead-index" aria-hidden="true">01</span>
+      <p class="eyebrow">Un detallito para ti.</p>
+      <span class="masthead-rule" aria-hidden="true"></span>
+      <svg class="luna-portrait" viewBox="0 0 220 150" role="img" aria-labelledby="luna-title luna-description">
+        <title id="luna-title">Luna</title>
+        <desc id="luna-description">Silueta de cuerpo completo de Luna sentada de espaldas, con orejas puntiagudas y la cola curvada hacia un lado, dibujada en neón rosado y rojo.</desc>
+        <defs>
+          <linearGradient id="luna-neon" x1="46" y1="18" x2="174" y2="137" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#f0c5c6"></stop>
+            <stop offset=".48" stop-color="#d47b86"></stop>
+            <stop offset="1" stop-color="#91404e"></stop>
+          </linearGradient>
+          <filter id="luna-glow" x="-35%" y="-35%" width="170%" height="170%">
+            <feGaussianBlur stdDeviation="3" result="soft-glow"></feGaussianBlur>
+            <feMerge>
+              <feMergeNode in="soft-glow"></feMergeNode>
+              <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+          </filter>
+        </defs>
+        <g class="luna-neon-art" fill="none" stroke="url(#luna-neon)" stroke-linecap="round" stroke-linejoin="round">
+          <g class="luna-tail">
+            <path class="luna-neon-halo" d="M78 112C59 111 44 103 41 90c-4-17 6-38 22-47 10-6 20-3 21 6 1 7-5 13-11 20-7 9-10 20-6 29 2 5 7 8 14 9"></path>
+            <path class="luna-neon-glow" d="M78 112C59 111 44 103 41 90c-4-17 6-38 22-47 10-6 20-3 21 6 1 7-5 13-11 20-7 9-10 20-6 29 2 5 7 8 14 9"></path>
+            <path class="luna-neon-core" d="M78 112C59 111 44 103 41 90c-4-17 6-38 22-47 10-6 20-3 21 6 1 7-5 13-11 20-7 9-10 20-6 29 2 5 7 8 14 9"></path>
+          </g>
+          <g class="luna-body">
+            <path class="luna-neon-halo" d="M97 30 73 13q-5-3-4 3l5 24C65 47 61 58 63 69c1 6 4 11 8 15-8 11-14 25-13 39 1 13 13 19 30 19h49c18 0 29-7 29-20-1-15-7-29-17-42 6-5 9-13 8-22-1-9-6-17-14-21l5-23q1-6-4-3l-22 17c-10-4-24-3-34 2Z"></path>
+            <path class="luna-neon-glow" d="M97 30 73 13q-5-3-4 3l5 24C65 47 61 58 63 69c1 6 4 11 8 15-8 11-14 25-13 39 1 13 13 19 30 19h49c18 0 29-7 29-20-1-15-7-29-17-42 6-5 9-13 8-22-1-9-6-17-14-21l5-23q1-6-4-3l-22 17c-10-4-24-3-34 2Z"></path>
+            <path class="luna-neon-core" d="M97 30 73 13q-5-3-4 3l5 24C65 47 61 58 63 69c1 6 4 11 8 15-8 11-14 25-13 39 1 13 13 19 30 19h49c18 0 29-7 29-20-1-15-7-29-17-42 6-5 9-13 8-22-1-9-6-17-14-21l5-23q1-6-4-3l-22 17c-10-4-24-3-34 2Z"></path>
+            <path class="luna-inner-ear" d="m78 38-3-17 15 12m46 4 3-17-15 12"></path>
+          </g>
+        </g>
+      </svg>
+    </header>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <h1 id="page-title">Sofi.</h1>
+        <p class="intro">Hay algo que sí quería agradecerte.</p>
+      </div>
+
+      <figure class="daughter-mark">
+        <svg class="heart" viewBox="0 0 400 360" role="img" aria-labelledby="heart-title heart-description">
+          <title id="heart-title">Un corazón para Gabriela</title>
+          <desc id="heart-description">Un corazón dibujado con una línea fina y el nombre Gabriela en el centro.</desc>
+          <defs>
+            <linearGradient id="heart-glint-color" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#8e3c49" stop-opacity="0"></stop>
+              <stop offset="50%" stop-color="#df9ba0"></stop>
+              <stop offset="100%" stop-color="#8e3c49" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+          <path class="heart-outline" pathLength="1000" d="M200 326 C166 296 69 230 69 151 C69 97 108 64 153 64 C177 64 194 78 200 98 C206 78 223 64 247 64 C292 64 331 97 331 151 C331 230 234 296 200 326 Z"></path>
+          <path class="heart-glint" pathLength="1000" d="M200 326 C166 296 69 230 69 151 C69 97 108 64 153 64 C177 64 194 78 200 98 C206 78 223 64 247 64 C292 64 331 97 331 151 C331 230 234 296 200 326 Z"></path>
+          <text class="heart-name" x="200" y="188" text-anchor="middle">Gabriela</text>
+        </svg>
+        <figcaption class="visual-caption">
+          <span class="caption-line" aria-hidden="true"></span>
+          Nuestra Gabriela. ❤️
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="message" id="message">
+      <p class="message-copy" id="message-copy">Sofi, gracias por esa bebé tan bonita que hicimos juntos. Mire lo perfecta que nos quedó. ❤️ No sé si alguna vez te lo he dicho así, pero siempre voy a estar agradecido contigo por darme algo tan lindo como Gabriela.</p>
+      <svg class="message-heart" id="message-heart" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 27S4 19.8 4 11.6C4 7.8 6.7 5 10.1 5c2.5 0 4.7 1.5 5.9 3.7C17.2 6.5 19.4 5 21.9 5 25.3 5 28 7.8 28 11.6 28 19.8 16 27 16 27Z"></path>
+      </svg>
+    </section>
+
+  </main>
+</body>
+</html>
